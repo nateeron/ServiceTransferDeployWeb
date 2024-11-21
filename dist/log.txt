@@ -1,0 +1,20 @@
+17-09-2024 14:20 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5010
+ * Running on http://10.88.88.132:5010
+17-09-2024 14:20 - [33mPress CTRL+C to quit[0m
+17-09-2024 14:20 - 10.88.88.132 - - [17/Sep/2024 14:20:44] "GET /transfer HTTP/1.1" 200 -
+17-09-2024 14:20 - 10.88.88.132 - - [17/Sep/2024 14:20:44] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+24-10-2024 13:22 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5010
+ * Running on http://10.88.88.132:5010
+24-10-2024 13:22 - [33mPress CTRL+C to quit[0m
+24-10-2024 13:22 - 10.88.88.132 - - [24/Oct/2024 13:22:52] "GET /uploadMulti HTTP/1.1" 200 -
+24-10-2024 13:22 - 10.88.88.132 - - [24/Oct/2024 13:22:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+21-11-2024 17:33 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5010
+ * Running on http://10.88.88.132:5010
+21-11-2024 17:33 - [33mPress CTRL+C to quit[0m
+21-11-2024 17:33 - 10.88.88.132 - - [21/Nov/2024 17:33:15] "GET / HTTP/1.1" 200 -

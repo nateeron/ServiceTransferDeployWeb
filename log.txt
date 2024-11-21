@@ -1,0 +1,74 @@
+17-09-2024 14:11 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5010
+ * Running on http://10.88.88.132:5010
+17-09-2024 14:11 - [33mPress CTRL+C to quit[0m
+17-09-2024 14:11 -  * Restarting with watchdog (windowsapi)
+17-09-2024 14:11 -  * Debugger is active!
+17-09-2024 14:11 -  * Debugger PIN: 306-575-088
+17-09-2024 14:11 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5010
+ * Running on http://10.88.88.132:5010
+17-09-2024 14:11 - [33mPress CTRL+C to quit[0m
+17-09-2024 14:11 -  * Restarting with watchdog (windowsapi)
+17-09-2024 14:11 -  * Debugger is active!
+17-09-2024 14:11 -  * Debugger PIN: 306-575-088
+17-09-2024 14:11 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5010
+ * Running on http://10.88.88.132:5010
+17-09-2024 14:11 - [33mPress CTRL+C to quit[0m
+17-09-2024 14:11 -  * Restarting with watchdog (windowsapi)
+17-09-2024 14:11 -  * Debugger is active!
+17-09-2024 14:11 -  * Debugger PIN: 828-812-346
+17-09-2024 14:14 -  * Detected change in 'G:\\M_save\\python\\AppUploadFileToserver\\main.py', reloading
+17-09-2024 14:14 -  * Detected change in 'G:\\M_save\\python\\AppUploadFileToserver\\main.py', reloading
+17-09-2024 14:14 -  * Restarting with watchdog (windowsapi)
+17-09-2024 14:14 -  * Debugger is active!
+17-09-2024 14:14 -  * Debugger PIN: 828-812-346
+17-09-2024 14:15 - stop_iis_site Failed to start site "hhHHhhj". Error: Command '['powershell', '-Command', 'Stop-Website -Name "hhHHhhj"']' returned non-zero exit status 1.
+17-09-2024 14:15 - start_iis_site Failed to start site "hhHHhhj". Error: Command '['powershell', '-Command', 'Start-Website -Name "hhHHhhj"']' returned non-zero exit status 1.
+17-09-2024 14:15 - 10.88.88.132 - - [17/Sep/2024 14:15:09] "POST /transfer HTTP/1.1" 200 -
+17-09-2024 14:15 - stop_iis_site Failed to start site "hhHHhhj". Error: Command '['powershell', '-Command', 'Stop-Website -Name "hhHHhhj"']' returned non-zero exit status 1.
+17-09-2024 14:15 - start_iis_site Failed to start site "hhHHhhj". Error: Command '['powershell', '-Command', 'Start-Website -Name "hhHHhhj"']' returned non-zero exit status 1.
+17-09-2024 14:15 - 10.88.88.132 - - [17/Sep/2024 14:15:52] "POST /transfer HTTP/1.1" 200 -
+17-09-2024 14:59 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5010
+ * Running on http://10.88.88.132:5010
+17-09-2024 14:59 - [33mPress CTRL+C to quit[0m
+17-09-2024 14:59 - stop_iis_site Failed to start site "hhHHhhj". Error: Command '['powershell', '-Command', 'Stop-Website -Name "hhHHhhj"']' returned non-zero exit status 1.
+17-09-2024 14:59 - start_iis_site Failed to start site "hhHHhhj". Error: Command '['powershell', '-Command', 'Start-Website -Name "hhHHhhj"']' returned non-zero exit status 1.
+17-09-2024 14:59 - 10.88.88.132 - - [17/Sep/2024 14:59:29] "POST /transfer HTTP/1.1" 200 -
+17-09-2024 15:19 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5010
+ * Running on http://10.88.88.132:5010
+17-09-2024 15:19 - [33mPress CTRL+C to quit[0m
+17-09-2024 15:22 - stop_iis_site Failed to start site "". Error: Command '['powershell', '-Command', 'Stop-Website -Name ""']' returned non-zero exit status 1.
+17-09-2024 15:22 - start_iis_site Failed to start site "". Error: Command '['powershell', '-Command', 'Start-Website -Name ""']' returned non-zero exit status 1.
+17-09-2024 15:22 - 10.88.88.132 - - [17/Sep/2024 15:22:25] "POST /transfer HTTP/1.1" 200 -
+17-09-2024 15:22 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5010
+ * Running on http://10.88.88.132:5010
+17-09-2024 15:22 - [33mPress CTRL+C to quit[0m
+17-09-2024 15:22 - 10.88.88.132 - - [17/Sep/2024 15:22:54] "POST /transfer HTTP/1.1" 200 -
+24-10-2024 13:23 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5010
+ * Running on http://10.88.88.132:5010
+24-10-2024 13:23 - [33mPress CTRL+C to quit[0m
+24-10-2024 13:24 - 10.88.88.132 - - [24/Oct/2024 13:24:16] "GET /uploadMulti HTTP/1.1" 200 -
+24-10-2024 13:24 - 10.88.88.132 - - [24/Oct/2024 13:24:19] "GET / HTTP/1.1" 200 -
+24-10-2024 13:31 - 10.88.88.132 - - [24/Oct/2024 13:31:40] "GET / HTTP/1.1" 200 -
+24-10-2024 13:31 - 10.88.88.132 - - [24/Oct/2024 13:31:40] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+21-11-2024 17:05 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5010
+ * Running on http://10.88.88.132:5010
+21-11-2024 17:05 - [33mPress CTRL+C to quit[0m
+21-11-2024 17:06 - 10.88.88.132 - - [21/Nov/2024 17:06:36] "GET / HTTP/1.1" 200 -
+21-11-2024 17:06 - 10.88.88.132 - - [21/Nov/2024 17:06:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+21-11-2024 17:09 - 10.88.88.132 - - [21/Nov/2024 17:09:44] "GET / HTTP/1.1" 200 -
