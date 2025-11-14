@@ -10,9 +10,9 @@ import logging
 app = Flask(__name__)
 
 # Configure the folder to save the uploaded files
-UPLOAD_FOLDER = 'static/uploads/'
-#app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
-app.config['UPLOAD_FOLDER'] = os.path.join(os.getcwd(), 'static', 'uploads')
+#UPLOAD_FOLDER = "G:\\M_save\X37_NECRITZ Setup V1.0 20230324\\New folder" #'static/uploads/'
+#UPLOAD_FOLDER = UPLOAD_FOLDER
+UPLOAD_FOLDER ="G:\\M_save\X37_NECRITZ Setup V1.0 20230324" #os.path.join(os.getcwd(), 'static', 'uploads')
 # Ensure the upload folder exists
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
@@ -25,25 +25,25 @@ def allowed_file(filename):
 @app.route('/s')
 def indexs():
     # Get list of files in the upload folder
-    filenames = os.listdir(app.config['UPLOAD_FOLDER'])
+    filenames = os.listdir(UPLOAD_FOLDER)
     return render_template('index.html', filenames=filenames)
 
 @app.route('/m')
 def indexsm():
     # Get list of files in the upload folder
-    filenames = os.listdir(app.config['UPLOAD_FOLDER'])
+    filenames = os.listdir(UPLOAD_FOLDER)
     return render_template('upload_multipart.html', filenames=filenames)
 
 
 @app.route('/')
 def index():
     # Get list of files in the upload folder
-    filenames = os.listdir(app.config['UPLOAD_FOLDER'])
+    filenames = os.listdir(UPLOAD_FOLDER)
     
     # Create a list of tuples containing filename and modification date
     files_with_dates = []
     for filename in filenames:
-        file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
+        file_path = os.path.join(UPLOAD_FOLDER, filename)
         mod_time = os.path.getmtime(file_path)
         mod_date = datetime.fromtimestamp(mod_time).strftime('%d/%m/%Y | %H:%M:%S')
         files_with_dates.append((filename, mod_date))
@@ -67,7 +67,7 @@ def upload_file():
             print(file and allowed_file(file.filename))
             if file :
                 filename = file.filename
-                filepath = os.path.join(app.config['UPLOAD_FOLDER'], filename)
+                filepath = os.path.join(UPLOAD_FOLDER, filename)
                 print("filename",filename)
                 print("filepath",filepath)
                 file.save(filepath)
@@ -79,7 +79,7 @@ def upload_file():
 @app.route('/uploads/<filename>')
 def uploaded_file(filename):
       print(filename)
-      return send_from_directory(app.config['UPLOAD_FOLDER'], filename)
+      return send_from_directory(UPLOAD_FOLDER, filename)
 
 @app.route('/uploadMulti', methods=['GET', 'POST'])
 def uploadMulti():
@@ -99,7 +99,7 @@ def uploadMulti():
         for file in files:
             if file :
                 filename = file.filename
-                filepath = os.path.join(app.config['UPLOAD_FOLDER'], filename)
+                filepath = os.path.join(UPLOAD_FOLDER, filename)
                 os.makedirs(os.path.dirname(filepath), exist_ok=True)
                 file.save(filepath)
                 print(f"Saved file: {filename} at {filepath}")
@@ -167,27 +167,27 @@ def start_iis_site(site_name):
 # @app.route('/download/<filename>')
 # def download_file(filename):
 #       # Ensure the file exists
-#         if not os.path.isfile(os.path.join(app.config['UPLOAD_FOLDER'], filename)):
+#         if not os.path.isfile(os.path.join(UPLOAD_FOLDER, filename)):
 #             abort(404)
-#         return send_from_directory(app.config['UPLOAD_FOLDER'], filename, as_attachment=True)
+#         return send_from_directory(UPLOAD_FOLDER, filename, as_attachment=True)
 #         mimetype = 'application/vnd.android.package-archive' if filename.endswith('.apk') else None
-#         return send_from_directory(app.config['UPLOAD_FOLDER'], filename, as_attachment=True, mimetype=mimetype)
+#         return send_from_directory(UPLOAD_FOLDER, filename, as_attachment=True, mimetype=mimetype)
 # @app.route('/download/<filename>')
 # def download_file(filename):
 #         # Ensure the file exists
-#         file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
+#         file_path = os.path.join(UPLOAD_FOLDER, filename)
 
 #         # Ensure the file exists
 #         if not os.path.isfile(file_path):
 #             abort(404)
     
 #         # Use send_from_directory to send the file as an attachment
-#         return send_from_directory(app.config['UPLOAD_FOLDER'], filename, as_attachment=True)
+#         return send_from_directory(UPLOAD_FOLDER, filename, as_attachment=True)
     
 @app.route('/download/<filename>')
 def download_file(filename):
     # Construct the full file path
-    file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
+    file_path = os.path.join(UPLOAD_FOLDER, filename)
     
     # Debugging output
     print(f"File path: {file_path}")
@@ -198,12 +198,12 @@ def download_file(filename):
         abort(404)
 
     # Send the file as an attachment
-    return send_from_directory(app.config['UPLOAD_FOLDER'], filename, as_attachment=True)
+    return send_from_directory(UPLOAD_FOLDER, filename, as_attachment=True)
 
 
 @app.route('/delete/<filename>', methods=['POST'])
 def delete_file(filename):
-    filepath = os.path.join(app.config['UPLOAD_FOLDER'], filename)
+    filepath = os.path.join(UPLOAD_FOLDER, filename)
     if os.path.isfile(filepath):
         os.remove(filepath)
     return redirect(url_for('index'))
